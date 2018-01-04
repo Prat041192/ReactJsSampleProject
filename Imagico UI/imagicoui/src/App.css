@@ -1,0 +1,101 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 100px;
+}
+
+.App-header {
+  background-color: #222;
+  height: 30px;
+  padding: 20px;
+  color: white;
+}
+
+.App-title {
+  font-size: 1.5em;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+.container {
+  background-color: #123;
+  padding: 20px;
+  color: white;
+
+  }
+  .row{
+    background-color: #123;
+  }
+  .SidePanel{
+    padding-top: 30px;
+    padding-right: 30px
+  }
+  .row .Section{
+    background-color: #123;
+    float: right;
+  }
+
+  .DishImage{
+    float:left;
+    height:375px;
+    width: 500px;
+  }
+.SubHeader{
+  font-weight: bold;
+}
+.ImageShape{
+  height:400px;
+}
+h2,h3{
+  background-color: #ffffff;
+  color: #000000;
+}
+ul{
+  list-style: none;
+}
+p{
+  font-family: "Times New Roman", Times, serif;
+  font-size: 1.275em;
+  text-align: justify;
+  margin-left: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.btn{
+      display: inline-block;
+    padding: 6px 12px;
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    cursor: pointer;
+    user-select: none;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+.btn-primary{
+    color: #fff;
+    background-color: #337ab7;
+    border-color: #2e6da4;
+}
+aside{
+padding-bottom: 20px;
+}
+li{
+  float: left;
+}
+.SectionHead{
+  color: #000000;
+}
