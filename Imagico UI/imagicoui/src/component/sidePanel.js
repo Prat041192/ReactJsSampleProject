@@ -9,14 +9,14 @@ import {
 class sidePanel extends React.Component {
     render() {
         return (
-	            <aside>
-				        <ul>
-				          <li><Link className="btn btn-primary" to={"/"}>Home</Link></li>
-				          <li><Link className="btn btn-primary" to={"/NonVegDishes"}>Non Vegeterian Dishes</Link></li>
-				          <li><Link className="btn btn-primary" to={"/VegDishes"}>Vegeterian Dishes</Link></li>
-				          <li><Link className="btn btn-primary" to={"/About"}>About</Link></li>
+	            <div className="collapse navbar-collapse">
+				        <ul className="nav navbar-nav navbar-right">
+				          <li><Link to={"/"}><span className="glyphicon glyphicon-home"></span> Home</Link></li>
+				          <li><Link to={"/NonVegDishes"}>Non Vegeterian Dishes</Link></li>
+				          <li><Link to={"/VegDishes"}>Vegeterian Dishes</Link></li>
+				          <li><Link to={"/About"}>About</Link></li>
 				        </ul>
-				</aside>
+				</div>
           
         );
     }

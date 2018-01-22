@@ -13,6 +13,7 @@
     "react-dom": "^16.2.0",
     "react-facebook-login-component": "^0.9.1",
     "react-image-slider": "^0.1.0",
+    "react-menu-bar": "^2.0.4",
     "react-responsive-carousel": "^3.1.30",
     "react-router": "^4.2.0",
     "react-router-dom": "^4.2.2",

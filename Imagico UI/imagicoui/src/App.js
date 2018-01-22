@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
 import './App.css';
 import Dashboard from './component/Dashboard.js';
-import ImageLog from './component/Imagelog.js';
+
 import browsingMetrics from 'browser-metrics/lib/browsingMetrics';
+import Contact from './component/Contact.js';
 
 class App extends React.Component {
   componentDidMount() {
@@ -18,18 +19,11 @@ class App extends React.Component {
   render = function ()  {  
     return (
       <div className="App">
-        <header className="App-header">
-          <h1 className="App-title"> Foody Chapter </h1>
-        </header>
-        <div className="container">
-          <div className="jumbotron">
-            <h2 className="text-center">Welcome!</h2>
-            <ImageLog></ImageLog>
-            <hr />
-          </div>
+        <div className="container-fluid">
           <div>
             <Dashboard></Dashboard>
           </div> 
+          <Contact></Contact>
         </div>
        </div>
  );

@@ -6,9 +6,9 @@ export default class Home extends React.Component {
   render() {
     return (
     	<DocumentTitle title={`Home`}>
-          <div className="row">
-            <div>
-              <h3>Home</h3>
+          <div className="container-fluid bg-grey">
+            <div className="row">
+              <h3>Welcome</h3>
               <h4><strong>Welcome to Foody's Chapter. Your directory to Indian Food Cousines!</strong></h4>
               <p className="App-intro">
                 <br></br> This is a web app created over react js to implement the web app concepts and improvise for further 

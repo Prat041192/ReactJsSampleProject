@@ -9,19 +9,19 @@ class DemoCarousel extends React.Component {
     render() {
         return (
             <Carousel autoPlay showThumbs={false}>
-                <div>
+                <div className="ImageShape">
                     <img src={"../images/Indian-Food-platter.jpg"} className="ImageShape"/>
                 </div>
-                <div>
+                <div className="ImageShape">
                     <img src="../images/North-India-Platter.jpg" className="ImageShape" alt="kch bhi"/>
                 </div>
-                <div>
+                <div className="ImageShape">
                     <img src="../images/South-Indian-Food.jpg" className="ImageShape" alt="kch bhi"/>
                 </div>
-                <div>
+                <div className="ImageShape">
                     <img src="../images/East-India-Platter.jpg" className="ImageShape" alt="kch bhi"/>
                 </div>
-                <div>
+                <div className="ImageShape">
                     <img src="../images/West-Indian-Platter.jpg" className="ImageShape" alt="kch bhi"/>
                 </div>
             </Carousel>

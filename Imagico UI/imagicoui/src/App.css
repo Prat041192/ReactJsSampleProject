@@ -7,42 +7,85 @@
 }
 
 .App-header {
-  background-color: #222;
+  background-color: #f6f6f6;
   height: 30px;
   padding: 20px;
   color: white;
 }
 
 .App-title {
-  font-size: 1.5em;
+  float: left;
+  padding-bottom: 10px;
 }
 
 .App-intro {
   font-size: large;
+}
+.jumbotron { 
+    background-color: #f4511e; /* Orange */
+    color: #ffffff;
+    padding-bottom: 25px;
+}
+
+.container-fluid {
+    padding: 40px
+}
+.bg-grey {
+    background-color: #f6f6f6;
+}
+
+.thumbnail {
+    padding: 0 0 15px 0;
+    border: none;
+    border-radius: 0;
+}
+
+.thumbnail img {
+    width: 40%;
+    height: 60%;
+    margin-bottom: 10px;
+    border-radius: 50px;
+}
+
+.collapse{
+  padding-top: 40px;
+}
+.navbar {
+    margin-bottom: 0;
+    background-color: #f4511e;
+    z-index: 9999;
+    border: 0;
+    font-size: 12px !important;
+    line-height: 1.42857143 !important;
+    letter-spacing: 4px;
+    border-radius: 0; 
+}
+
+.navbar li a, .navbar .navbar-brand {
+    color: #fff !important;
+}
+
+.navbar-nav li a:hover, .navbar-nav li.active a {
+    color: #f4511e !important;
+    background-color: #fff !important;
+}
+
+a {
+  color: #000000;
+}
+.navbar-default .navbar-toggle {
+    border-color: transparent;
+    color: #fff !important;
 }
 
 @keyframes App-logo-spin {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
 }
-.container {
-  background-color: #123;
-  padding: 20px;
-  color: white;
-
-  }
-  .row{
-    background-color: #123;
-  }
   .SidePanel{
     padding-top: 30px;
     padding-right: 30px
   }
-  .row .Section{
-    background-color: #123;
-    float: right;
-  }
-
   .DishImage{
     float:left;
     height:375px;
@@ -53,10 +96,7 @@
 }
 .ImageShape{
   height:400px;
-}
-h2,h3{
-  background-color: #ffffff;
-  color: #000000;
+  border-radius: 25px;
 }
 ul{
   list-style: none;
@@ -69,33 +109,7 @@ p{
   padding-left: 20px;
   padding-right: 20px;
 }
-.btn{
-      display: inline-block;
-    padding: 6px 12px;
-    margin-bottom: 0;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 1.42857143;
-    text-align: center;
-    white-space: nowrap;
-    vertical-align: middle;
-    cursor: pointer;
-    user-select: none;
-    background-image: none;
-    border: 1px solid transparent;
-    border-radius: 4px;
-}
-.btn-primary{
-    color: #fff;
-    background-color: #337ab7;
-    border-color: #2e6da4;
-}
+
 aside{
 padding-bottom: 20px;
-}
-li{
-  float: left;
-}
-.SectionHead{
-  color: #000000;
 }
