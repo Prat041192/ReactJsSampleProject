@@ -9,15 +9,20 @@ import {
 class sidePanel extends React.Component {
     render() {
         return (
-	            <div className="collapse navbar-collapse">
-				        <ul className="nav navbar-nav navbar-right">
-				          <li><Link to={"/"}><span className="glyphicon glyphicon-home"></span> Home</Link></li>
-				          <li><Link to={"/NonVegDishes"}>Non Vegeterian Dishes</Link></li>
-				          <li><Link to={"/VegDishes"}>Vegeterian Dishes</Link></li>
-				          <li><Link to={"/About"}>About</Link></li>
-				        </ul>
-				</div>
-          
+            <div>
+
+
+                <nav className="navbar navbar-default navbar-fixed-top">
+                        <div className="navbar-collapse" id="myNavbar">
+                            <ul className="nav navbar-nav navbar-right">
+                                <li><Link to={"/"}><span className="glyphicon glyphicon-home"> Home</span></Link></li>
+                                <li><Link to={"/NonVegDishes"}>Non Vegeterian Dishes</Link></li>
+                                <li><Link to={"/VegDishes"}>Vegeterian Dishes</Link></li>
+                                <li><Link to={"/About"}>About</Link></li>
+                            </ul>
+                        </div>
+                </nav>
+            </div>
         );
     }
 }

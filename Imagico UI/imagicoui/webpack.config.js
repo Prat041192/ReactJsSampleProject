@@ -1,5 +1,7 @@
 var webpack = require("webpack");
 var path = require("path");
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+const CleanWebpackPlugin = require('clean-webpack-plugin');
 
 var DIST_DIR = path.resolve(__dirname, "public");
 var SRC_DIR = path.resolve(__dirname, "src");
@@ -7,11 +9,14 @@ var SRC_DIR = path.resolve(__dirname, "src");
 var config = {
 entry: SRC_DIR + "/index.js",
 output: {
-	path: DIST_DIR +"/app",
+	path: DIST_DIR ,
 	filename:"bundle.js",
-	publicPath:"/app/"
+    publicPath: '/'
 	},
-    devtool : 'source-map',
+    devtool : 'inline-source-map',
+    devServer: {
+        contentBase: './public'
+  },
 module: {
 	loaders:[
 		{
@@ -23,17 +28,26 @@ module: {
 			}
 		},
           
-        { test: /\.css?/, loaders: ["style-loader", "css-loader"] },
+        { 	test: /\.css?/,
+			loaders: [
+				"style-loader",
+				"css-loader"
+			]
+		},
         {
-                test: /\.html$/,
-                loader: "html"
-                // alternative: raw
+            test: /\.(jpg|g|png|gif|svg)$/,
+            loader: "file-loader"
         },
         {
-                test: /\.(jpg?|g|png|gif|svg)$/i,
-                loader: "file-loader"
-                // alternative: raw
+			test: /\.(woff|woff2|eot|ttf|otf)$/,
+            use: [
+              'file-loader']
+		},
+        {
+			test: /\.html$/,
+			loader: "html"
         }
+
 	]
 }
 

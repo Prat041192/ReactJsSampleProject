@@ -6,16 +6,6 @@ import browsingMetrics from 'browser-metrics/lib/browsingMetrics';
 import Contact from './component/Contact.js';
 
 class App extends React.Component {
-  componentDidMount() {
-    browsingMetrics({
-      trackTiming: (category, name, duration) => {
-        // Now, we can send the metrics to a third party to keep track of them. 
-      },
-      sampleRate: 20,
-      log: false,
-    });
-  }
-  
   render = function ()  {  
     return (
       <div className="App">
